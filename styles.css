@@ -91,6 +91,7 @@ body {
 }
 
 .nav {
+  margin-bottom: 30px;
 }
 
 .links {
@@ -138,7 +139,7 @@ body {
   max-width: 1150px;
 
   background-color: #ffffff;
-  height: 1000px;
+
   /* center the box  */
   margin: 0 auto;
   border-radius: 5px;
@@ -264,4 +265,74 @@ body {
 }
 
 .credential {
+}
+
+/* HOW SECTION */
+
+.how {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 65px 0 85px;
+}
+
+.second-heading {
+  font-size: 32px;
+  color: #292c33;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.steps {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 80px 0;
+}
+.step {
+  max-width: 215px;
+  text-align: center;
+}
+.step-icon {
+  height: 65px;
+  width: 65px;
+  font-size: 35px;
+
+  color: #0b0a0a;
+}
+
+/* .step:nth-child(1) .step-icon {
+  background-color: #11a2f3;
+} */
+
+.third-heading {
+  font-size: 25px;
+  color: #3d4048;
+  font-size: 500;
+  margin-bottom: 10px;
+}
+.text {
+  color: #74777d;
+  font-size: 18px;
+}
+
+.more {
+  text-decoration: underline;
+  color: var(--accent-color);
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var (--accent-color);
+  transition: all 0.2s;
+}
+
+.more:hover {
+  color: var (--accent-color-dark);
+}
+.more-icon {
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.more:hover .more-icon {
+  transform: translateX(3px);
 }
