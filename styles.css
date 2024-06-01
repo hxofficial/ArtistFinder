@@ -1,0 +1,118 @@
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* KEYFRAMES */
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+/* BASE STYLES */
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif, Helvetica, Arial;
+  color: #292c33;
+  background-color: #eeeff3;
+
+  /* remove horizantal scroll bar ⬇️ */
+  overflow-x: hidden;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+/*HEADER*/
+
+.header {
+  position: relative;
+  z-index: 1; /* Ensures header is above background */
+
+  /* to put all the items in the nav bar along with the icon  ⬇️ */
+
+  display: flex;
+
+  /* to make sure the links are as far as possible from the icon to have that bis space in between ⬇️  */
+  justify-content: space-between;
+
+  /* to restrict width of the header ⬇️ */
+  max-width: 1200px;
+
+  /* for responsiveness to centre the items in the header vertically ⬇️ */
+  margin-left: 0 auto;
+
+  /* have padding on all side ⬇️ */
+  padding: 25px;
+
+  /* animate ⬇️ first we created @keyframe structure at the begining of our css file */
+  animation: fade-in 0.6s;
+}
+
+.logo {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 30px;
+}
+
+.nav {
+  position: relative;
+  z-index: 1;
+}
+
+.links {
+  /* put the items in the navbar horizontally ⬇️*/
+  display: flex;
+
+  /* put space between the items in the nav bar ⬇️ */
+  column-gap: 45px;
+}
+
+.link {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  /* change all the letters to capital ⬇️ */
+  text-transform: uppercase;
+
+  /* put space between each letter of a word */
+  letter-spacing: 1px;
+
+  /* when hover it has a smooth⬇️ color chande ⬇️ */
+  transition: all 0.3s;
+}
+
+.link:hover {
+  color: rgba(255, 255, 255, 1);
+}
+.link-item {
+}
+.link--btn {
+}
