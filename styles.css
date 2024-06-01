@@ -336,3 +336,29 @@ body {
 .more:hover .more-icon {
   transform: translateX(3px);
 }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #a1a4b0;
+  padding: 0 25;
+  padding-bottom: 50px;
+}
+
+.copyright {
+}
+
+.legal-list {
+  display: flex;
+  column-gap: 35px;
+}
+
+.legal-item {
+}
+
+.legal-link {
+  font-size: 14px;
+  text-transform: capitalize;
+}
